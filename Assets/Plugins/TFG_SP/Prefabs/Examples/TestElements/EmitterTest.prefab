@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3516813480554739654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3516813480554739673}
+  - component: {fileID: 3516813480554739672}
+  - component: {fileID: 3516813480554739655}
+  m_Layer: 0
+  m_Name: EmitterTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3516813480554739673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516813480554739654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.96, y: 0.8299998, z: 7.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3516813480554739672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516813480554739654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71599ba88c190f249a5a3bf5c1047c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToEmit:
+  - EditorDisplayName: BouncyCube
+    GameObjectToEmit: {fileID: 1307017730174168841, guid: 96936d42716442b46a54408b8ff4f72c,
+      type: 3}
+    EmissionCount: 3
+    LocalEmissionPoint: {x: 0, y: 0, z: 0}
+    InheritRotation: 0
+    TriggerSpawnable: 1
+    SpawnTime: 0.5
+    ForceToApply: {x: 0, y: 7, z: 0}
+    ForceVariation: {x: 3, y: 3, z: 3}
+    TorqueToApply: {x: 0, y: 0, z: 0}
+    TorqueVariation: {x: 5, y: 5, z: 5}
+  - EditorDisplayName: Bullet
+    GameObjectToEmit: {fileID: 1307017730174168841, guid: 96936d42716442b46a54408b8ff4f72c,
+      type: 3}
+    EmissionCount: 0
+    LocalEmissionPoint: {x: 0, y: 0, z: 0}
+    InheritRotation: 0
+    TriggerSpawnable: 1
+    SpawnTime: 0.5
+    ForceToApply: {x: 0, y: 7, z: 0}
+    ForceVariation: {x: 3, y: 3, z: 3}
+    TorqueToApply: {x: 0, y: 0, z: 0}
+    TorqueVariation: {x: 5, y: 5, z: 5}
+  - EditorDisplayName: Love
+    GameObjectToEmit: {fileID: 1307017730174168841, guid: 96936d42716442b46a54408b8ff4f72c,
+      type: 3}
+    EmissionCount: 0
+    LocalEmissionPoint: {x: 0, y: 0, z: 0}
+    InheritRotation: 0
+    TriggerSpawnable: 1
+    SpawnTime: 0.5
+    ForceToApply: {x: 0, y: 7, z: 0}
+    ForceVariation: {x: 3, y: 3, z: 3}
+    TorqueToApply: {x: 0, y: 0, z: 0}
+    TorqueVariation: {x: 5, y: 5, z: 5}
+--- !u!114 &3516813480554739655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516813480554739654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8452ae7a045607047bfadf05c4cdc53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimerDurationDefault: 2
+  BeginOnEnable: 1
+  Looping: 1
+  OnTimerEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3516813480554739672}
+        m_MethodName: EmitAll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
