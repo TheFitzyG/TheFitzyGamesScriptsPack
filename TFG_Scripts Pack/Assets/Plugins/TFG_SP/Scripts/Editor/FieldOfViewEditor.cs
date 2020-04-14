@@ -1,6 +1,9 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+//Tutorial for this scripts usage can be found here: https://youtu.be/1WwLgfJj7Uo
+
+//Some code has been sourced and adapted from Sebastian Lague: https://www.youtube.com/watch?v=rQG9aUWarwE
 
 namespace TFG_SP
 {

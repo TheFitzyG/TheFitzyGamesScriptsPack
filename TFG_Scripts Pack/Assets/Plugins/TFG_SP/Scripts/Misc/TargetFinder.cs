@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Tutorial for this scripts usage can be found here: https://youtu.be/1WwLgfJj7Uo
 namespace TFG_SP
 {
     public class TargetFinder : MonoBehaviour
     {
+
+        //Some code has been sourced and adapted from Sebastian Lague: https://www.youtube.com/watch?v=rQG9aUWarwE
 
         [Header("Accuisition")]
         public float ViewRadius = 3f;

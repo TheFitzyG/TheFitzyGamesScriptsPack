@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-
+//Tutorial for this scripts usage can be found here: https://youtu.be/1WwLgfJj7Uo
 
 namespace TFG_SP
 {
